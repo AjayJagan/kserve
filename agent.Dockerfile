@@ -3,9 +3,6 @@
 # TODO move to ubi9/go-toolset:1.24 when available
 FROM registry.access.redhat.com/ubi9/go-toolset:1.23 AS builder
 
-ARG TARGETOS
-ARG TARGETARCH
-
 # Copy in the go src
 WORKDIR /go/src/github.com/kserve/kserve
 COPY go.mod  go.mod
@@ -18,7 +15,7 @@ COPY pkg/    pkg/
 
 # Build
 USER root
-RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOFLAGS=-mod=mod go build -a -o agent ./cmd/agent
+RUN CGO_ENABLED=0 GOOS=linux GOFLAGS=-mod=mod go build -a -o agent ./cmd/agent
 
 # Generate third-party licenses
 COPY LICENSE LICENSE
