@@ -34,7 +34,7 @@ exclude = ["kserve/storage/test"]
 python = ">=3.9,<3.13"
 uvicorn = { version = "^0.30.6", extras = ["standard"] }
 fastapi = ">=0.115.3"
-cloudevents = "^1.6.2"
+cloudevents = "^2.0.0"
 six = "^1.16.0"
 kubernetes = ">=23.3.0"
 python-dateutil = "^2.8.0"
