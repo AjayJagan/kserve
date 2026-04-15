@@ -19,7 +19,7 @@ runs:
   using: "composite"
   steps:
     - name: Install kubectl
-      uses: azure/setup-kubectl@v4.0.0
+      uses: azure/setup-kubectl@v5.1.0
       with:
         version: 'v1.30.7'
 
