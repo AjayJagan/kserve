@@ -1,6 +1,6 @@
 module github.com/kserve/kserve
 
-go 1.23.6
+go 1.25
 
 require (
 	cloud.google.com/go/storage v1.50.0
@@ -127,7 +127,7 @@ require (
 	github.com/prometheus/prometheus v0.55.1 // indirect
 	github.com/prometheus/statsd_exporter v0.27.1 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
-	github.com/stretchr/objx v0.5.2 // indirect
+	github.com/stretchr/objx v0.7.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.1 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
